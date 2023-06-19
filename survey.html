@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Kedua</title>
+  <link rel="stylesheet" href="style/survey.css">
+</head>
+<body>
+  <h1>The Chainsmokers World Tour 2023</h1>
+  
+  <h2>Ticket Form</h2>
+  
+  <form id="survey-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate">
+     
+
+    <div class="item">
+        <label>Categories:</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="peminatan" value="Peminatan 1"> VVIP/Backstage (Limited)
+          </label>
+          <label>
+            <input type="radio" name="peminatan" value="Peminatan 2"> VIP
+          </label>
+          <label>
+            <input type="radio" name="peminatan" value="Peminatan 3"> Regular
+          </label>
+        </div>
+      </div>
+    
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea>
+    
+    <label for="opinion">eMail:</label>
+    <textarea id="opinion" name="opinion"></textarea>
+    
+
+    <div class="button-container">
+        <input type="submit" value="Submit" class="submit-button" onclick="submitForm()">
+        <a href="index.html" class="back-button">Back</a>
+      </div>
+  </form>
+  
+  
+  <script src="survey.js"></script>
+</body>
+</html>
